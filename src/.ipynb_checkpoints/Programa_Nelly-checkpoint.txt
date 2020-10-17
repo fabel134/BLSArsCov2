@@ -1,0 +1,22 @@
+#!/usr/local/bin/env python3.7
+#-*- coding: iso-8859-1 -*-
+
+import pandas as pd
+
+data = pd.read_csv("c:/Users/Jose Abel/BetterLab/Tesis/abel-lista1", header=None, sep='\t')
+#print (data)
+data1 = data.T
+#print (data1)
+#data3 = data1.iloc[0, 0] +"-"+ data1.iloc[0,1]
+#print (data3)
+b=range(0,124)
+for i in data1:
+    data3 = data1.iloc[b, 0] +"-"+ data1.iloc[b,1]
+    print(data3)
+    
+    
+    
+
+
+
+
